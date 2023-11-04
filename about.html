@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <!--Google Fonts and Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: rgb(235, 236, 242);
+      }
+      .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .menu {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        background: rgb(37, 38, 53);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .foot{
+        background-color: black;
+        max-height: 250px;
+      }
+      .logo {
+        width: fit-content;
+        font-family: poppins;
+        font-size: 32px;
+        color: whitesmoke;
+        font-weight: 600;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #menu {
+        display: none;
+      }
+      .logo label {
+        display: none;
+      }
+      .items {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .item {
+        width: 100px;
+        padding: 10px 18px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5mm;
+        font-family: poppins;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+      }
+      .item:hover {
+        background: rgba(100, 100, 100, 0.5);
+      }
+      @media screen and (max-width: 650px) {
+        .menu {
+          flex-direction: column;
+        }
+        .menu .logo {
+          width: 100%;
+        }
+        .menu .logo label {
+          display: block;
+          cursor: pointer;
+          position: relative;
+          width: 30px;
+          height: 30px;
+        }
+        .menu .logo label::before {
+          position: absolute;
+          content: "menu";
+          font-family: "Material Icons";
+          top: 0;
+          left: 0;
+          font-size: 30px;
+        }
+        .menu .items {
+          width: 100%;
+          flex-direction: column;
+          max-height: 0;
+          overflow: hidden;
+          transition: 0.5s ease-in-out;
+        }
+        .menu .item {
+          width: 100%;
+          padding: 15px;
+          border-radius: 0;
+          border-top: 0.5mm solid rgb(52, 53, 71);
+        }
+        #menu:checked ~ .items {
+          max-height: 500px;
+        }
+        #menu:checked ~ .logo label::before {
+          content: "close";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <div class="center">
+      <div class="menu">
+        <input type="checkbox" name="" id="menu" />
+        <div class="logo">
+          The Hulk Gym
+          <label for="menu"></label>
+        </div>
+
+        <div class="items">
+          <img src="https://seeklogo.com/images/H/hulk-logo-B465FF52A2-seeklogo.com.png" style="max-width: 100px; height: 100px; margin: 67.5px 0px; width: 300px;">
+          <a href="index.html" class="item">Home</a>
+          <a href="about.html" class="item">About</a>
+          <a href="franchise.html" class="item">Franchise</a>
+          <a href="enroll.html" class="item">Enroll</a>
+          <a href="contact.html" class="item">Contact</a>
+        </div>
+      </div>
+    </div>
+</header>
+<section class="headdd text-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+        <div class="w-full sm:p-4 px-4 mb-6">
+          <h1 class="title-font font-medium text-xl mb-2 text-gray-900 ninja " style="color: blue; font-weight: 700;">It's all about ourself</h1>
+          <div class="leading-relaxed"><b>At THE GYM, our mission is to provide you with the ultimate fitness experience, one that focuses on your specific fitness needs, helps you achieve the results you are after and invigorates your soul. We guarantee the highest quality equipment and training programs available, an expert staff, special amenities that are often not found in other health clubs, attentive service and truly sophisticated surroundings. Our every Fitness training center is committed to being a unique Fitness training center in india.
+
+            We believe in being different. Not merely for the sake of being dissimilar, but different by being the best in the fitness industry. We set out with one simple and honest goal in mind; to be sensitive to our memberâ€™s needs and fitness requirements. Our ideology is to provide our members with the best fitness technologies and services that no others can provide. We listen, we are sensitive to your needs, and most importantly, we thus know what you, as a gym-goer, want.
+            
+            Welcome to THE GYM, the latest and modern fitness clubs in New Delhi India Located at Pitampura, Rajouri Garden, Patel Nagar, Vikas Puri, Janak Puri, Model Town, Dayanand Vihar, Punjabi Bagh, Malviya Nagar and Paschim Vihar.
+            
+            THE GYM is a fitness club brand that specializes on the prestigious market segment of business professionals and the working professionals. With our dedication in bringing you the latest fitness technologies, THE GYM is equipped with many hi-tech equipment and state-of-the art fitness gadgets. Our professional personal trainers and trained helpers dedication will ensure that you receive the appropriate fitness program, customized to your fitness and health needs. We currently have the highest trainers to memberâ€™s ratio in our industry. Our members enjoy our private yet classy environment and this will ensure that you exercise in utmost privacy and luxury. At THE GYM, we proudly fuse fitness with fineness; because here, fitness is a privilege.
+            
+            THE GYM is the brainchild of our founders G.Khatter who believe that healthy lifestyle lead to better quality of life. The main idea is to have our members enjoy their fitness trainings in classy and private settings. As such, it is not surprising that THE GYM is passionately led by a team of highly qualified and experienced fitness instructors and health professionals. Our team's passion is to serve our members with sheer dedication, warm friendliness and joyful helpfulness.
+            
+            At THE GYM, our primary goal is to create awareness and easy access to keep your body, mind and spirit, at peak performance. Our vision is to maintain a fitness centre catering for our memberâ€™s physical wellbeing, thereby improving, building and maintaining a stronger and fitter body condition complimented by a health foods bar to nourish your body's daily fibre and vitamins requirements.
+            
+            If you are looking for unwaivered personal attention during your training regime, then THE GYM is the place you will want to be.
+            
+            We really care about the peoples physique and fitness. There are around 2.7k people who have collaborated with us and there is the 18 centers in delhi and 2 center in Noida, uttar pradesh. We have world class traineees who trains you to becoming a real world hulk Here are some of the basis details which you must have to know :- </b> </div>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+          <p class="leading-relaxed">People</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">18</h2>
+          <p class="leading-relaxed">Branches</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">350</h2>
+          <p class="leading-relaxed">Trainees</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+          <p class="leading-relaxed">Awards win</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+        <img class="object-cover object-center w-full h-full" src="https://source.unsplash.com/720x600/?bodybuilding" alt="stats">
+      </div>
+    </div>
+    <br>
+    
+  </section>
+  <footer>
+    <div class="foot">
+      <img src="https://seeklogo.com/images/H/hulk-logo-B465FF52A2-seeklogo.com.png" style="max-width: 100px; height: 100px; width: 300px;">
+      <pre>
+      <h1 style="color: whitesmoke; font-family:Arial, Helvetica, sans-serif; text-align: center;"> &copy; The HULK GYM
+  
+        "WE MAKE THE BEAST"</h1>
+      <pre></pre>
+    </div>
+  </footer>
+  

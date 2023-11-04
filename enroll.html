@@ -1,0 +1,113 @@
+<style>
+    body {
+        background-image: url(dark.avif);
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: black;
+
+    }
+
+    label {
+        color: whitesmoke;
+        font-size: larger;
+        font-weight: 900;
+
+    }
+
+    .top {
+        padding: 2px;
+        margin: 7px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>
+        <marquee style="background-color: whitesmoke;" direction="right">Enrolling form</marquee>
+    </h1>
+    <form action="submit.html"></form>
+
+
+    <div class="top">
+        <ul>
+            <div>
+                <li> <label for="Name">First Name :</label>
+                    <input type="text" id="Name" placeholder="enter first name" autofocus required>
+            </div>
+            </li>
+
+            <div>
+                <br>
+                <li>
+                    <label for="lName"> Last &nbsp;Name :</label>
+                    <input type="text" id="lName" placeholder="enter last name" autofocus required>
+                </li>
+            </div>
+            <div>
+                <br>
+                <li>
+                    <label for="mail">Email id &nbsp; &nbsp; &nbsp;:</label>
+                    <input type="email" id="mail" placeholder="Enter email" required>
+                </li>
+            </div>
+
+            <div>
+                <br>
+                <li>
+                    <label for="age"> Your age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                    <input type="number" id="age" placeholder="Enter your age " required>
+                </li>
+            </div>
+
+            <div>
+                <br>
+                <li>
+                    <label for="Male"> Male :</label>
+                    <input type="radio" name="Male" id="Male" required>
+                    <label for="female"> Female :</label>
+                    <input type="radio" name="Male" id="female" required>
+                </li>
+            </div>
+
+            <div>
+                <br>
+                <li>
+                    <label for="Number">Phone no.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                    <input type="number" id="Number" placeholder="Enter your no here" required>
+
+                </li>
+            </div>
+
+            <div>
+                <br>
+                <li>
+                    <label for="Address">Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+                    <input type="text" id="Address" placeholder="Enter your address">
+                </li>
+            </div>
+    </div>
+    <div style="font-size: larger; font-weight: 700; margin: 12px; padding: 12px;">
+        <br><br>
+        <div
+            style="color: white;">All the details submitted here is totally correct
+            <input type="checkbox">
+        </div>
+    </div>
+    <div class="submit">
+        <a href="submit.html"
+            style="color: white; font-weight: 900; background-color: black; border: 2px solid white; border-radius: 10px;">
+            Click here to Submit here </a>
+    </div><br>
+    <div class="submit">
+        <a href="index.html"
+            style="color: white; font-weight: 900; background-color:black; border: 2px solid white; border-radius: 10px;">Go
+            back to home page</a>
+    </div>
+</body>
+
+</html>

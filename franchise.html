@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franchise</title>
+    <!--Google Fonts and Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: rgb(235, 236, 242);
+      }
+      .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .menu {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        background: rgb(37, 38, 53);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .foot{
+        background-color: black;
+        max-height: 250px;
+      }
+      .logo {
+        width: fit-content;
+        font-family: poppins;
+        font-size: 32px;
+        color: whitesmoke;
+        font-weight: 600;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #menu {
+        display: none;
+      }
+      .logo label {
+        display: none;
+      }
+      .items {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .item {
+        width: 100px;
+        padding: 10px 18px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5mm;
+        font-family: poppins;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+      }
+      .headse{
+            padding: 12px;
+            margin: 12px;
+            color: white;
+            font-weight: 700;
+            font-size: larger;
+            text-align: center;
+
+
+
+        }
+        main{
+            padding: 12px;
+            margin: 22px;
+            font-weight: 500;
+            border: 2px solid black;
+            background-color: blueviolet;
+        }
+      .item:hover {
+        background: rgba(100, 100, 100, 0.5);
+      }
+      @media screen and (max-width: 650px) {
+        .menu {
+          flex-direction: column;
+        }
+        .menu .logo {
+          width: 100%;
+        }
+        .menu .logo label {
+          display: block;
+          cursor: pointer;
+          position: relative;
+          width: 30px;
+          height: 30px;
+        }
+        .menu .logo label::before {
+          position: absolute;
+          content: "menu";
+          font-family: "Material Icons";
+          top: 0;
+          left: 0;
+          font-size: 30px;
+        }
+        .menu .items {
+          width: 100%;
+          flex-direction: column;
+          max-height: 0;
+          overflow: hidden;
+          transition: 0.5s ease-in-out;
+        }
+        .menu .item {
+          width: 100%;
+          padding: 15px;
+          border-radius: 0;
+          border-top: 0.5mm solid rgb(52, 53, 71);
+        }
+        #menu:checked ~ .items {
+          max-height: 500px;
+        }
+        #menu:checked ~ .logo label::before {
+          content: "close";
+        }
+      }
+    </style>
+  </head>
+  <body style="background-image: url(dark.avif);">
+    <header>
+    <div class="center">
+      <div class="menu">
+        <input type="checkbox" name="" id="menu" />
+        <div class="logo">
+          The Hulk Gym
+          <label for="menu"></label>
+        </div>
+
+        <div class="items">
+          <img src="https://seeklogo.com/images/H/hulk-logo-B465FF52A2-seeklogo.com.png" style="max-width: 100px; height: 100px; margin: 67.5px 0px; width: 300px;">
+          <a href="index.html" class="item">Home</a>
+          <a href="about.html" class="item">About</a>
+          <a href="franchise.html" class="item">Franchise</a>
+          <a href="enroll.html" class="item">Enroll</a>
+          <a href="contact.html" class="item">Contact</a>
+        </div>
+      </div>
+    </div>
+</header>
+
+<h1 class=" headse">
+    THE GYM FRANCHISE
+ </h1> 
+ <main>
+Let's help you set up resession proof business
+
+THE GYM Franchise Information:
+THE GYM is a company that believes in fitness. It stands for quality, franchising brand uniformity and superior services. That quality, superior service and uniformity produces more revenue through marketing, operations and experience than many other fitness clubs in the marketplace today.
+
+A Cutting Edge Franchise Opportunity
+In life timing is everything. The fitness industry continues to grow each year and opportunities abound. THE GYM Key Club franchises capture the cutting edge of affordability and efficient design.
+
+Efficient
+Open design yet loaded with cutting edge commercial grade equipment. Sure to please the amateur or the enthusiast.
+
+Value Driven
+Value driven without full staffing. Which gives you lower overheads and more profitability. 24 hour "key" access seven days a week your members will find the key club approach to be convenient and affordable.
+
+New Age
+THE GYM offer not only the newest but most durable commercial grade equipment.
+
+Before You Even Open
+Simply put we are here to help! Here are just a few of the support services available to New THE GYM Franchises :
+
+License to use our recognized THE GYM name, our other marks, and our proprietary systems
+Training for you and additional staff members
+Assistance in finding a location
+Assistance with construction of your specialized THE GYM facility
+Help in acquiring fitness equipment, inventory, and supplies
+Help in marketing your services
+Assistance with your grand opening
+Once You Have Opened
+Our support does not end when you open. Your journey and our assistance have just begun.
+Here are the additional services :
+
+Telephone consultation support
+Wholesale services
+Administrative support services as needed
+Information systems
+Financing
+Ongoing advertising programs - attrition/retention marketing tactics, target specific marketing tactics
+Research and development
+Regional/national account development
+</main>
+<footer>
+    <div class="foot">
+      <img src="https://seeklogo.com/images/H/hulk-logo-B465FF52A2-seeklogo.com.png" style="max-width: 100px; height: 100px; width: 300px;">
+      <pre>
+      <h1 style="color: whitesmoke; font-family:Arial, Helvetica, sans-serif; text-align: center;"> &copy; The HULK GYM
+  
+        "WE MAKE THE BEAST"</h1>
+      </pre>
+    </div>
+  </footer>
+  
